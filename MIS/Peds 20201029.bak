@@ -1,0 +1,57 @@
+Alacart application must have inventory costing feature
+Sir Rex will do the analysis and give to MIS? (For confirmation since he already discussed the inventory costing)
+Blackbox - is a term that is acting as a midtier for commissary and bakeshop/kitchen. It holds the secret recipe.
+POS System should handle order taker feature. Wherein a customer will order and when he bills out any POS machine could handle it.
+For checking by Mark Brian:
+	Printing (when servo updates system, printing of long report occurs)
+	Upgrade
+	Email
+Next branches that will open for LP, Rosario and Manaoag (mas malaki mga ito kesa sa mangaldan)		
+Follow up status of Telecom/IntegSys POS. Compute the time lapsed in approval from the last evaluation.
+Follow up Food POS
+Preparation for branch opening must be advanced.
+	- checklist for hardware, POS, etc.
+	-	location ng POS sila mam tina ang magbibigay
+	- CCTV management (positioning, wire exposures, standardization, recording, auto power on)
+	- CCTV recorder must have cabinet
+	- request RCP(Reflected Ceiling Plan) for setting the CCTV location
+	- request As Built Plan after the construction of building
+When we will have assistant for bernard?
+Follow up File Server for Engineering
+*Follow up laptop for Charge Invoice (c/o mac)
+PLDT billing for Los Pedritos must be email directly on lospedritos2017@gmail.com (create a request letter on PLDT)
+For business transactions always CC email to lospedritos2017@gmail.com
+Ask sir marlon if lospedritos.com.ph is possible but the email host is still guanzon group
+POS Checklist (detailed list)
+Textblast to inform cusstomers that Los Pedritos is owned by Guanzon(request will be from mam tina)
+Textblast to transfer to telemarketing
+Pedritos phone number validator(give a specific date to Peds for validating their capture mobile number from COVID declaration form)
+Check multimedia workload
+Request proposed plan and as built plan for buildings
+Train personnel for pedritos
+*Replication of purchasing to main office
+*Expiration
+*Discrepancy report
+*No monitor is allowed to be left in the CCTV recorder room(bernard must always bring monitor/keyboard when he travels)
+*Checklist before maintenance/repair
+Remove picture of pogi from timekeeper haha
+
+Hardware Checklist
+Development Journal
+Purchasing Replication
+PO Disbursement
+Production Transfer
+Inventory split/grouping
+Averaging/FIFO/Higher Price
+
+Inv_Ledger
+	- nPurPrice
+	- dExpiryxx (Optional)
+
+Option 2
+Inv_Others
+	- dExpiryxx
+	
+Consultation of facebook API to kaiser group
+
+Marlon and Mac will do the planning for the system requests and will present to sir rex for additional inputs

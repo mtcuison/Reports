@@ -1,0 +1,223 @@
+Text blast Template
+
+ABOT CARAVAN (Display Caravan)2017
+
+Guanzon Group
+Hello Ka-Motorsiklo,
+Tara na at magkita-kita sa «Date of Event» 8:30am-5:30pm @ «Location of Venue» saksihan ang kalidad na mga Motorsiklo plus may offer na discount at magandang after-sales service ang hatid sa inyo ng Guanzon! Kita-kits ah sa «Date of Event».
+
+FREE SERVICE CHECK-UP(FSCU)2017
+
+Guanzon Group
+Hello Ka-riders,
+Imbitado ka sa FREE SERVICE CHECK-UP or libreng serbisyo ng ating magigiting na mekaniko sa June 9-10, 2017 @ UEMI Laoag - Multi (Brgy. 14, M.H. Del Pilar St. Laoag City), mag avail ng langis at libreng jersey at free gupit para sa iyo Ka-rider. Oh diba panalo ka dito, katulong mo ang Guanzon sa pag alaga ng iyong motor! Ingat sa biyahe see you on June 9-10.
+
+
+GUANZON BIYAHENG FIESTA 2017
+
+Hello Ka-Motorsiklo,
+Tara na at maki-SAYA sa GUANZON BIYAHENG FIESTA, June 5-6, 2017 8:30am-5:30pm @ Bugallon Public Market, Bugallon Pangasian, dala namin ang mga kalidad na Motorsiklo na may kasamang fiesta discount at fiestang serbisyo hatid para sa inyo. Plus, fiestang fiesta ang hatid ng aming magigiting na mekaniko, dalhin lang ang inyong motor at mag avail ng langis, fiesta sa libre ang hatid ng GUANZON BIYAHENG FIESTA! Fiesta sa saya ito mga ka-riders! see you June 5-6, 2017! 
+
+m06017000193
+
+Hola amigos. Please come and taste the new flavor of Los Pedritos Premium restaurant at Metroplaza Dagupan. Opening on March 31, 2017 @ 11am. Hasta la vista.
+
+mcc dagupan 1700024
+
+534922913
+
+lssql = "SELECT" & _
+					  " sClientID," & _
+					  " sLastName," & _
+					  " sFrstName," & _
+					  " sPhoneNox," & _
+					  " sMobileNo," & _
+					  " xMobileNo," & _
+					  " xPhoneNox," & _
+					  " dPurchase," & _
+					  " dTransact"
+lssql = lssql & " FROM (SELECT" & _
+        " a.sClientID," & _
+        " a.sLastName," & _
+        " a.sFrstName," & _
+        " a.sPhoneNox," & _
+        " a.sMobileNo," & _
+        " i.sMobileNo    xMobileNo," & _
+        " j.sPhoneNox    xPhoneNox," & _
+        " d.dPurchase," & _
+        " e.dTransact," & _
+        " d.sSerialID," & _
+        " h.sBrandIDx," & _
+        " g.sModelIDx"
+lssql = lssql & " FROM Client_Master a" & _
+        " LEFT JOIN Client_Mobile i" & _
+          " ON a.sClientID = i.sClientID" & _
+            " AND i.cIncdMktg = '1'" & _
+        " LEFT JOIN Client_Telephone j" & _
+          " ON a.sClientID = j.sClientID," & _
+        " TownCity b," & _
+        " Province c," & _
+        " MC_Registration d" & _
+        " LEFT JOIN JobOrderBranch_Master e" & _
+          " ON d.sClientID = e.sClientID" & _
+            " AND d.sSerialID = e.sSerialID," & _
+        " MC_Serial f," & _
+        " MC_Model g," & _
+        " Brand h"
+lssql = lssql & " WHERE a.sClientID = d.sClientID" & _
+          " AND a.sTownIDxx = b.sTownIDxx" & _
+          " AND b.sProvIDxx = c.sProvIDxx" & _
+          " AND d.sSerialID = f.sSerialID" & _
+          " AND f.sModelIDx = g.sModelIDx" & _
+          " AND g.sBrandIDx = h.sBrandIDx" & _
+          " AND LENGTH(a.sMobileNo) = 11" & _
+          " AND a.sTownIDxx IN ('0314', '0346', '0331', '0332', '0333', '0347')" & _
+      " ORDER BY a.sLastName, a.sFrstName, d.dPurchase DESC, e.dTransact DESC) xSource"
+lssql = lssql & " WHERE sModelIDx IN ('M0W105093', 'M00107002', 'M0W108003', 'M0W105094', 'M0W107002', 'M0W108004', 'M0W105011', 'M00107001', 'M0W108005', 'M00114013', 'M00111005', 'M00116051'," & _ 
+" 'M00116050', 'M00115012', 'M00115013', 'M00112001', 'M00110012', 'M0W109001', 'M0W311003', 'M00109001', 'M00110013', 'M00317001', 'M00114019', 'M0W105018'," & _ 
+" 'M00111001', 'M00112008', 'M00112010', 'M00113013', 'M0W311009', 'M00116033', 'M00116035', 'M00116034', 'M0W311006', 'M0W311007', 'M00111013', 'M0W315001'," & _ 
+" 'M00117015', 'M00115006', 'M00116015', 'M00117009', 'M00113007', 'M00115010', 'M00117016', 'M00115041', 'M00116041', 'M00116016', 'M00117012', 'M00116049'," & _ 
+" 'M00111026', 'M00110001', 'M00111021', 'M0W109006', 'M00111020', 'M0W109005', 'M00113010', 'M00117013', 'M00115001', 'M00117014', 'M00114003', 'M00114002'," & _ 
+" 'M0W105010', 'M00111016', 'M0W109004', 'M00114008', 'M00110002', 'M00109010', 'M00109018', 'M00113003', 'M0W105007', 'M0W106003', 'M00113036', 'M00113037'," & _ 
+" 'M00116042', 'M00110003', 'M0W108010', 'M00110006', 'M00110005', 'M00113038', 'M00107010', 'M00111014', 'M0W108016', 'M00113044', 'M00114024', 'M00115032'," & _ 
+" 'M00116040')" & _
+" GROUP BY sClientID, sSerialID" & _
+" ORDER BY sLastName, sFrstName"
+
+
+
+New Byaheng Fiesta Template
+
+Guanzon Group
+Mag-refer ng Motorcycle buyer, may libreng kang cellphone ngayong Guanzon Biyaheng Fiesta infront of Anda Police Station, Anda Pangasinan, July 28-29, 2017. Present this text upon your visit.
+
+Nokia3310 is now available at Guanzon Mobitek CityMall-Dagupan, grab yours now for only 2,490. Hurry!!!
+SM Fairview, SM Marilao, SM Tarlac
+
+E3W7E0004555
+
+
+GOOD NEWS! GUANZON GREAT DEALS, 24 MONTHS ZERO INTEREST TO ALL BUYERS OF KAWASAKI ROUSER 180 WITH SRP OF 69,500. VISIT ANY GUANZON OUTLET NEAR YOU. HURRY UP! LIMITED OFFERS ONLY.
+
+Good news! Guanzon Great Deals, 24 months zero interest to all buyers of Kawasaki ROUSER 189 with SRP of 69,600. Visit any Guanzon outlet near you. Hurry up! Limited offers only.
+
+GUANZON GREAT DEALS! 24 MONTHS O% INTEREST TO ALL BUYERS OF KAWASAKI ROUSER 180 @ 69,500 SRP. VISIT ANY GUANZON OUTLET NEAR YOU. HURRY UP! LIMITED OFFERS ONLY.
+
+Guanzon Great Deals! 24 months 0% interest to all buyers of Kawasaki Rouser 180 @ 69,500 SRP. Visit any Guanzon outlet near you. Hurry up! Limited offers only.
+
+
+limay, orion, pilar, balanga, mariveles
+
+mapandan, mangaldan, urdaneta, manaoag
+
+488960890
+56a4hh
+
+535714459
+104
+
+Marilao
+Meycauayan, marilao, bocaue
+
+san juan, cabugao, sinait, badoc, magsingal
+
+asingan, sta. maria, san manuel
+
+153563208
+
+Guanzon Group
+Mag-refer ng Motorcycle buyer, may libreng kang cellphone ngayong Guanzon Biyaheng Fiesta @ Naguilian Bus Terminal, Naguilian La Union, November 17-18, 2017. Present this text upon your visit.
+
+Hello Ka-Motorsiklo,
+Tara na at maki-SAYA sa GUANZON BIYAHENG FIESTA, November 21, 2017 8:30am-5:30pm @ Vintar Covered Court, Brgy. 1, Vintar Ilocos Norte, dala namin ang mga kalidad na Motorsiklo na may kasamang fiesta discount at fiestang serbisyo hatid para sa inyo. Plus, fiestang fiesta ang hatid ng aming magigiting na mekaniko, dalhin lang ang inyong motor at mag avail ng langis, fiesta sa libre ang hatid ng GUANZON BIYAHENG FIESTA! Fiesta sa saya ito mga ka-riders! see you Nov. 21, 2017!
+
+Vintar Covered Court, Brgy. 1, Vintar
+
+Naguilian Bus Terminal, Naguilian La Union
+Nov 17-18
+
+Naguilian, Bauang, Burgos, San Fernando
+
+m633yr
+
+Guanzon Group
+Kawasaki ba ang motor mo? Tara na sa Grand Opening ng GUANZON KAWASAKI Shop on Nov. 27, 2017, sumali sa motorcade at makasama ang brazilian model na si Daianna Meneses!
+Gas Allowance, Jersey, Food and Refreshements, Service Check Up, Bingo all for FREE at marami pang supresa! To register visit our shop @ Tapuac District, Dagupan City, Pangasinan.
+Beside exit gate of Lyceum Northwestern University.
+
+Al Ferrer
+09171640035
+
+
+Morong, Dinalupihan, Hermosa, Orani, San Filipe, San Narciso, Subic
+Guanzon Group
+Own your dream Samsung Galaxy J7 Pro at 0% interest for 9months, no credit card needed. Just bring 2 valid ID's, any billing statement with your name/address and other supporting documents. Visit our Guanzon Mobitek at 3rd floor SM Olongapo.
+
+Pilar, Bagac, Orion, Sual, Mariveles, Hermosa, Samal, Abucay, Bataan Area
+Own your dream Samsung Galaxy J7 Pro at 0% interest for 9months, no credit card needed. Just bring 2 valid ID's, any billing statement with your name/address and other supporting documents. Visit our Guanzon Mobitek at 2nd floor Vista Mall Balanga.
+
+Bani, Burgos, Dasol, Sual, Labrador, Mabini, Bolinao
+Own your dream Samsung Galaxy J7 Pro at 0% interest for 9months, no credit card needed. Just bring 2 valid ID's, any billing statement with your name/address and other supporting documents. Visit our Guanzon Mobitek at Upper Ground floor Nepomart Alaminos.
+
+Dagupan, Calasiao
+Good news ViVo Smartphone is already available at GMAC Metroplaza, AB Fernandez Ave. Dagupan City.
+
+
+Bulacan, Valenzuela
+Blessed Guanzon morning. Looking for a gift this coming Christmas? We have something for you. Buy Samsung S8, Samsung S8+ or Samsung Note 8 and get free Selfie Stick, Ring Holder and 32gb memory card. What are you waiting for? Visit our Guanzon Mobitek at SM Baliwag, SM Valenzuela and SM Marilao.
+
+Quezon City, San Mateo Rizal, Mandaluyong
+Blessed Guanzon morning. Looking for a gift this coming Christmas? We have something for you. Buy Samsung S8, Samsung S8+ or Samsung Note 8 and get free Selfie Stick, Ring Holder and 32gb memory card. What are you waiting for? Visit our Guanzon Mobitek at SM Fairview, SM San Mateo and Robinsons Galleria.
+
+
+Hello Ka-Motorsiklo,
+Tara na at maki-SAYA sa GUANZON BIYAHENG FIESTA, March 14-15, 2018 8:30am-5:30pm @ San Jacinto Auditorium, Brgy. Poblacion San Jacinto, Pangasinan, dala namin ang mga kalidad na Motorsiklo na may kasamang fiesta discount at fiestang serbisyo hatid para sa inyo. Plus, fiestang fiesta ang hatid ng aming magigiting na mekaniko, dalhin lang ang inyong motor at mag avail ng langis, fiesta sa libre ang hatid ng GUANZON BIYAHENG FIESTA! Fiesta sa saya ito mga ka-riders! see you March 14-15, 2018!
+
+
+Guanzon Group
+Hello Ka-riders,
+Imbitado ka sa FREE SERVICE CHECK-UP or libreng serbisyo ng ating magigiting na mekaniko para sa may mga ROUSER na modelo ng motorsiklo ng Kawasaki gaganapin sa June 21-22, 2018 @ MCC Dagupan - Kawasaki(GK Bldg. Tapuac Dist., Dagupan City), mag avail ng langis at may libreng giveaways ang para sa iyo Ka-rider. Oh diba panalo ka dito, katulong mo ang Guanzon sa pag alaga ng iyong motor! Ingat sa biyahe see you on June 21-22. First 50 customers only.
+
+
+Guanzon Group
+PRE-ORDER SOON! Huawei Nova 2 Lite, only P9,990 with FREE JBL Bluetooth headphones worth P4,599! March 14-23, 2018.
+Place your orders in the ff branches:
+Huawei Experience Stores:
+Robinsons Santiago
+SM Tarlac
+Guanzon Mobitek Stores:
+SM Cabanatuan
+SM Tarlac
+NE Pacific Mall Cabanatuan
+Robinsons Santiago
+SM Cauayan
+Just deposit P1000 which will be deducted on the total amount upon full payment on redemption date on March 24 at Huawei SM Tarlac and Huawei Robinsons Santiago! Hurry order now!
+
+
+Hello Ka-Motorsiklo,
+Tara na at maki-SAYA sa GUANZON BIYAHENG FIESTA, June 22-23, 2018 8:30am-5:30pm @ Bugallon Public Market, BugallonPangasinan, dala namin ang mga kalidad na Motorsiklo na may kasamang fiesta discount at fiestang serbisyo hatid para sa inyo. Plus, fiestang fiesta ang hatid ng aming magigiting na mekaniko, dalhin lang ang inyong motor at mag avail ng langis, fiesta sa libre ang hatid ng GUANZON BIYAHENG FIESTA! Fiesta sa saya ito mga ka-riders! see you June 22-23!
+
+3J8jWpETYi34UVKE4JgpEkQffFjD8PkQzG
+
+Expensive
+	25% stocks
+	75% bonds
+Undervalued 
+	75% stocks
+	25% bonds
+	
+Clock Tower, Pob. West, Science City of Muñoz, Nueva Ecija infort of Municipality of Muñoz
+
+Guanzon Group
+Hello Ka-riders. GMC Orani - Honda will be having FREE Service Check Up / FREE Engine Flushing for FLOODED UNITS on July 30-31 and August 1, 2018.
+MA. CECILIA SAMBAJON 09171234128
+
+Guanzon Group
+Hello Ka-riders. GMC Olongapo - Honda will be having FREE Service Check Up / FREE Engine Flushing for FLOODED UNITS on July 30-31 and August 1, 2018.
+DARLYN SERNADA 09778235612
+
+
++639778572777 mam my
++639157899660 sir norman
++639260375777 mac
++639177013632 kuya peng
