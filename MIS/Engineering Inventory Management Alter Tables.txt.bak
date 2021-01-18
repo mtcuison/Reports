@@ -1,0 +1,16 @@
+CREATE TABLE `Project` (
+  `sProjCode` char(7) NOT NULL,
+  `sProjDesc` varchar(128) NOT NULL,
+  `dProjStrt` date DEFAULT NULL,
+  `dProjStop` date DEFAULT NULL,
+  `dActlStrt` date DEFAULT NULL,
+  `dActlStop` date DEFAULT NULL,
+  `sInChrgex` varchar(12) DEFAULT NULL,
+  `sContrtor` varchar(12) DEFAULT NULL,
+  `cRecdStat` char(1) DEFAULT '1',
+  `sModified` varchar(12) DEFAULT NULL,
+  `dModified` datetime DEFAULT NULL,
+  `dTimeStmp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`sProjCode`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+

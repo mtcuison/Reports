@@ -1,0 +1,10 @@
+PLDT ISP -> switch(24 port) -> POS(4 units)
+PLDT ISP -> switch(24 port) -> Unify(1st Floor)
+PLDT ISP -> switch(24 port) -> Unify(Function room - 2nd Floor)
+PLDT ISP -> switch(24 port) -> 1 nvr (resto)
+PLDT ISP -> switch(24 port) -> 1 dvr (resto)
+PLDT ISP -> switch(24 port) -> 1 server
+
+PLDT ISP -> switch(24 port) -> old office -> wifi router -> 1 old building dvr
+PLDT ISP -> switch(24 port) -> old office -> wifi router -> 1 bakeshop dvr
+PLDT ISP -> switch(24 port) -> old office -> wifi router -> container office -> gigabit 8 port switch -> 7 pc units
